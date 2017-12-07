@@ -26,6 +26,12 @@ RUN apt-get install -y \
 RUN apt-get install -y \
       bison \
       flex \
+      freeglut3 \
+      freeglut3-dev \
+      xserver-xorg \
+      xserver-xorg-core \
+      libgl1-mesa-glx \
+      libgl1-mesa-dri \
       libz-dev \
       libglew-dev \
       libqt4-dev \
@@ -48,7 +54,7 @@ RUN apt-get install -y \
       libgtk-3-dev \
       clang-3.8
 
-
+# Install Python dependencies
 RUN pip3 install -U \
       pip \
       protobuf \

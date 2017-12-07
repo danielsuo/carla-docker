@@ -1,2 +1,15 @@
 # carla-docker
-Dockerfile of the Carla simulator
+
+## TODO
+- Upgrade OpenGL
+- Enable X / OpenGL through docker
+- Create CarlaUE4.sh
+- Update materials assets
+
+## How to build
+Instructions to be expanded
+- Get GitHub access token
+- Sign up for UnrealEngine
+- Get access to https://github.com/EpicGames/UnrealEngine
+- Install docker
+- Run ```./bin/docker/build [OAUTH_TOKEN]```
