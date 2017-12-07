@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+sudo docker run -it --user=carla --name carla ucbdrive/carla:dev
