@@ -75,7 +75,7 @@ pushd deps/UnrealEngine
 ./Setup.sh -exclude=Win32 -exclude=Win64 -exclude=Mac -exclude=Android -exclude=IOS -exclude=HTML5 && \
    ./GenerateProjectFiles.sh && \
    make
-export UE4_ROOT=$PWD/deps/UnrealEngine
+export UE4_ROOT=$PWD
 popd
 
 # Install Carla
