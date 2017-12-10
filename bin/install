@@ -83,8 +83,17 @@ git clone https://github.com/carla-simulator/carla
 pushd carla
 ./Setup.sh
 
+# Link AutomotiveMaterials
+# NOTE: Full instructions here http://carla.readthedocs.io/en/latest/how_to_add_automotive_materials/
+aws s3 cp s3://bdd-dev/bdp/carla/AutomotiveMaterials.zip . --profile bdd
+unzip AutomotiveMaterials.zip
+mv AutomotiveMaterials Unreal/CarlaUE4/Content
+rm AutomotiveMaterials.zip
+cp assets/RedirectorInstance.uasset Unreal/CarlaUE4/Content/Static/Vehicles/GeneralMaterials/MaterialRedirectors/
+
 # TODO: ./Rebuild.sh tries to launch the UE4Editor at the end, which will fail
 ./Rebuild.sh; exit 0
+
 make check
 popd
 

@@ -13,3 +13,5 @@ Instructions to be expanded
 - Get access to https://github.com/EpicGames/UnrealEngine
 - Install docker
 - Run ```./bin/docker/build [OAUTH_TOKEN]```
+- Set up ```awscli``` with bdd credentials ```s3://bdd-dev/bdp/carla/AutomotiveMaterials.zip``` as profile ```bdd```
+
